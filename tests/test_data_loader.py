@@ -19,7 +19,6 @@ from portfolio_optimizer.data_loader import (
     merge_factors,
 )
 
-
 class TestLoadPrices:
     """Tests for load_prices function"""
 

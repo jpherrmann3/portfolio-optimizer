@@ -15,7 +15,7 @@ def load_prices(
     start: Union[str, datetime] = "2020-01-01",
     end: Union[str, datetime] = None,
     source: str = "yahoo",
-    column: str = "Adj Close"
+    column: str = "Close"
 ) -> pd.DataFrame:
     """
     Download historical price data for specified tickers.
@@ -56,8 +56,7 @@ def load_prices(
                 tickers,
                 start=start,
                 end=end,
-                progress=False,
-                show_errors=False
+                progress=False
             )
 
             # Handle single vs multiple tickers
